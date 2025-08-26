@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient(135deg, #ffe4ec 0%, #ffd6f5 100%);
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  color: #7a1f5c;
+}
+
+.markdown-section {
+  background: rgba(255,255,255,0.88);
+  border-radius: 16px;
+  box-shadow: 0 4px 32px #ffb6c150;
+  padding: 2rem 2.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #d72660;
+  font-family: 'Segoe Script', 'Comic Sans MS', cursive;
+}
+
+a {
+  color: #d72660;
+  text-decoration: underline wavy #ffb6c1;
+}
+
+a:hover {
+  color: #ff69b4;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #ffd6f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffb6c1;
+  border-radius: 5px;
+}
+
+blockquote {
+  background: #fff0f6;
+  border-left: 4px solid #ffb6c1;
+  padding: 0.5em 1em;
+  color: #a64d79;
+}
+
+code, pre {
+  background: #ffe4ec;
+  color: #d72660;
+}
+
+ul, ol {
+  background: transparent;
+  border-radius: 8px;
+  padding-left: 2em;
+}
+
+hr {
+  border: 0;
+  border-top: 2px dashed #ffb6c1;
+  margin: 2em 0;
+}
