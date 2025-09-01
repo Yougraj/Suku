@@ -48,6 +48,101 @@ code, pre {
   color: #d72660;
 }
 
+.question-answer {
+  background: #fff8fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(215,38,96,0.08);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid #ffd6f5;
+  line-height: 1.7;
+}
+
+.question-answer p {
+  margin: 0.8em 0;
+  color: #5e2a4f;
+}
+
+.question-answer h3,
+.question-answer h4,
+.question-answer h5,
+.question-answer h6 {
+  color: #c41c5d;
+  margin: 1.2em 0 0.7em;
+}
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+  margin: 1.5em 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(215, 38, 96, 0.1);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ffd6f5;
+}
+
+.comparison-table th {
+  background-color: #ffe4ec;
+  color: #d72660;
+  font-weight: 600;
+}
+
+.comparison-table tr:hover {
+  background-color: #fff0f6;
+}
+
+.comparison-table td:first-child {
+  font-weight: 500;
+  color: #a64d79;
+}
+
+@media (max-width: 768px) {
+  .comparison-table {
+    display: block;
+  }
+  .comparison-table thead {
+    display: none;
+  }
+  .comparison-table tbody, 
+  .comparison-table tr, 
+  .comparison-table td {
+    display: block;
+    width: 100%;
+  }
+  .comparison-table tr {
+    margin-bottom: 1em;
+    border: 1px solid #ffd6f5;
+    border-radius: 8px;
+  }
+  .comparison-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .comparison-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    text-align: left;
+    font-weight: 600;
+    color: #d72660;
+  }
+}
+
 ul, ol {
   background: transparent;
   border-radius: 8px;
